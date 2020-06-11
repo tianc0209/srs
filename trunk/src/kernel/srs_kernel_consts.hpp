@@ -64,13 +64,15 @@
 
 // The common io timeout, for connect, recv or send.
 // TODO: FIXME: Maybe change to smaller value, such as 3s?
-#define SRS_CONSTS_RTMP_TIMEOUT (30 * SRS_UTIME_SECONDS)
+// Note: Tht old value is 30
+#define SRS_CONSTS_RTMP_TIMEOUT (80 * SRS_UTIME_SECONDS)
 
 // The timeout to wait for client control message,
 // if timeout, we generally ignore and send the data to client,
 // generally, it's the pulse time for data seding.
 // @remark, recomment to 500ms.
-#define SRS_CONSTS_RTMP_PULSE (500 * SRS_UTIME_MILLISECONDS)
+// Note: Tht old value is 500
+#define SRS_CONSTS_RTMP_PULSE (700 * SRS_UTIME_MILLISECONDS)
 
 // The max rtmp header size:
 //     1bytes basic header,
